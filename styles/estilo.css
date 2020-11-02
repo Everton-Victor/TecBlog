@@ -24,10 +24,7 @@ body {
 #area-principal {
 	width: 920px;
 	margin: 0 auto;
-}
-
-#area-postagens, #area-lateral {
-	background-color: orange;
+	padding: 15px;
 }
 
 #area-postagens {
@@ -46,8 +43,21 @@ body {
 	background-color: white;
 }
 
-.postagem img {
-	width: 620px;
+
+.postagem-lateral {
+	font-size: 0.8em;
+	padding: 5px 5px 10px;
+	border-bottom: 2px dotted #CCC;
+}
+
+.conteudo-lateral {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.conteudo-lateral .link-categoria a{
+	display: block;
 }
 
 #rodape {
@@ -59,26 +69,60 @@ body {
 
 
  /*Formatação do menu*/
- a {
+ #area-cabecalho a {
  	text-decoration: none;
  	padding: 8px 12px;
  }
 
- a:link, a:visited {
+ #area-cabecalho a:link, #area-cabecalho a:visited {
  	color: white;
  }
 
- a:hover {
+ #area-cabecalho a:hover {
  	color: #F7B600;
  	background-color: #FFF;
  }
 
 /*Formatações gerais*/
+a {
+ 	text-decoration: none;
+ }
+
+a:link, a:visited {
+ 	color: #F7B600;
+ }
+
+a:hover {
+ 	text-decoration: underline;
+ }
+
 h1 {
 	color: #4E4E4E;
 	font-size: 2.5em;
 }
 
+h2 {
+	color: #F7B600;
+}
+
+h3 {
+	color: #565656;
+	background-color: #CCC;
+	padding: 5px;
+}
+
 .branco {
 	color: white;
+}
+
+.data-postagem {
+	font-size: 0.8em;
+	border-bottom: 2px solid #F4F4F4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.postagem img {
+	width: 620px;
 }
